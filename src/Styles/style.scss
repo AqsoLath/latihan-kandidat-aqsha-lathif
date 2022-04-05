@@ -23,26 +23,26 @@
 
 .my-box-grid {
     display: grid ;
-    grid-template-areas: "lightblue blue"
-                            "lightblue pink";
+    grid-template-areas: "birumuda biru"
+                            "birumuda merahmuda";
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 2fr;
 
         .my-lightblue{
-            grid-area: lightblue;
+            grid-area: birumuda;
             padding: 250px 0;
             width: 100%;
             background-color: lightblue;
         }
         .my-blue{
-            grid-area: blue;
+            grid-area: biru;
             padding: 100px 0;
             width: 100%;
             background-color: royalblue;
 
         }
         .my-pink{
-            grid-area: pink;
+            grid-area: merahmuda;
             padding: 150px 0;
             width: 100%;
             background-color: pink;
