@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <div>
+        {/* Gunakan react router untuk buat halamannya, agar halamannya tidak perlu load*/}
         <Menu />
         <Routes>
           <Route path="/" element={<Home />} />
