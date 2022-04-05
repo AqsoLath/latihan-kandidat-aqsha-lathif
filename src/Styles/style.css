@@ -23,9 +23,6 @@
 .my-box-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "blue" "lightblue" "pink";
-  -ms-grid-rows: 1fr 3fr 2fr;
-      grid-template-rows: 1fr 3fr 2fr;
 }
 
 .my-box-grid .my-blue {

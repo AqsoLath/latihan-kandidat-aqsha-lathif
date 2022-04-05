@@ -23,10 +23,6 @@
 
 .my-box-grid {
     display: grid ;
-    grid-template-areas: "blue"
-                        "lightblue"
-                        "pink";
-    grid-template-rows: 1fr 3fr 2fr;
     
     .my-blue{
         width: 100%;
