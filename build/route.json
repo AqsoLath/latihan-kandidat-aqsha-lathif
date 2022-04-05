@@ -1,0 +1,54 @@
+{
+    "nav_menu": [
+    {
+        "name": "Home",
+        "url": "/",
+        "target": "",
+        "children": []
+    },
+    {
+        "name": "Pages",
+        "url": "/pages",
+        "target": "",
+        "children": [
+        {
+                "name": "About Us",
+                "url": "/about-us",
+                "target": "",
+                "children": []
+        },
+        {
+                "name": "Our Product",
+                "url": "/our-product",
+                "target": "",
+                "children": []
+        }
+        ]
+    },
+    {
+        "name": "Articles",
+        "url": "/articles",
+        "target": "",
+        "children": [
+        {
+            "name": "Lorem Ipsum",
+            "url": "/articles/lorem-ipsum",
+            "target": "",
+            "children": []
+        },
+        {
+            "name": "Dolor Sit Amet",
+            "url": "/articles/dolor-sit-amet",
+            "target": "",
+            "children": []
+        }
+        ]
+    },
+    {
+        "name": "Contact",
+        "url": "/contact",
+        "target": "",
+        "children": []
+    }
+    ]
+}
