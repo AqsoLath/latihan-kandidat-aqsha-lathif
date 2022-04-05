@@ -1,0 +1,74 @@
+.utama {
+  width: 100%;
+}
+
+.my-salmon {
+  width: 100%;
+  padding: 25px 0;
+  background-color: salmon;
+}
+
+.my-green {
+  width: 100%;
+  padding: 125px 0;
+  background-color: lightgreen;
+}
+
+.my-magenta {
+  width: 100%;
+  padding: 50px 0;
+  background-color: magenta;
+}
+
+.my-box-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "blue" "lightblue" "pink";
+  -ms-grid-rows: 1fr 2.5fr 1.5fr;
+      grid-template-rows: 1fr 2.5fr 1.5fr;
+}
+
+.my-box-grid .my-blue {
+  width: 100%;
+  padding: 100px 0;
+  background-color: royalblue;
+}
+
+.my-box-grid .my-lightblue {
+  width: 100%;
+  padding: 100px 0;
+  background-color: lightblue;
+}
+
+.my-box-grid .my-pink {
+  width: 100%;
+  padding: 100px 0;
+  background-color: pink;
+}
+
+@media screen and (min-width: 768px) {
+  .my-box-grid {
+        grid-template-areas: "lightblue blue" "lightblue pink";
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+  }
+  .my-box-grid .my-lightblue {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: lightblue;
+  }
+  .my-box-grid .my-blue {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: blue;
+  }
+  .my-box-grid .my-pink {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: pink;
+  }
+}
+/*# sourceMappingURL=style.css.map */

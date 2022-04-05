@@ -1,0 +1,65 @@
+.utama{
+    width: 100%;
+}
+
+.my-salmon{
+    width: 100%;
+    padding: 25px 0;
+    background-color: salmon;
+}
+
+.my-green{
+    width: 100%;
+    padding: 125px 0;
+    background-color: lightgreen;
+}
+
+
+.my-magenta{
+    width: 100%;
+    padding: 50px 0;
+    background-color: magenta;
+}
+
+.my-box-grid {
+    display: grid ;
+    grid-template-areas: "blue"
+                        "lightblue"
+                        "pink";
+    grid-template-rows: 1fr 2.5fr 1.5fr;
+    
+    .my-blue{
+        width: 100%;
+        padding: 100px 0;
+        background-color: royalblue;
+    }
+
+    .my-lightblue{
+        width: 100%;
+        padding: 100px 0;
+        background-color: lightblue;
+    }
+
+    .my-pink{
+        width: 100%;
+        padding: 100px 0;
+        background-color: pink;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        grid-template-areas: "lightblue blue"
+                            "lightblue pink";
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        .my-lightblue{
+            grid-area: lightblue;
+        }
+        .my-blue{
+            grid-area: blue;
+        }
+        .my-pink{
+            grid-area: pink;
+        }
+    }
+}
