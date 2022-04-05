@@ -23,49 +23,50 @@
 .my-box-grid {
   display: -ms-grid;
   display: grid;
-}
-
-.my-box-grid .my-blue {
-  width: 100%;
-  padding: 100px 0;
-  background-color: royalblue;
+      grid-template-areas: "lightblue blue" "lightblue pink";
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
 }
 
 .my-box-grid .my-lightblue {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: lightblue;
+  padding: 250px 0;
   width: 100%;
-  padding: 100px 0;
   background-color: lightblue;
 }
 
-.my-box-grid .my-pink {
-  width: 100%;
+.my-box-grid .my-blue {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: blue;
   padding: 100px 0;
+  width: 100%;
+  background-color: royalblue;
+}
+
+.my-box-grid .my-pink {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pink;
+  padding: 150px 0;
+  width: 100%;
   background-color: pink;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .my-box-grid {
-        grid-template-areas: "lightblue blue" "lightblue pink";
-    -ms-grid-columns: 3fr 1fr;
-        grid-template-columns: 3fr 1fr;
-    -ms-grid-rows: 1fr 2fr;
-        grid-template-rows: 1fr 2fr;
-  }
-  .my-box-grid .my-lightblue {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: lightblue;
-  }
-  .my-box-grid .my-blue {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: blue;
-  }
-  .my-box-grid .my-pink {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: pink;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
